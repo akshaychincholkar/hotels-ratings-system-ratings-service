@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    uri: mongodb://localhost:27017/ratings
+    database: hotels_review_system
+
+#    username: postgres
+#    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#  show-sql: true
+
+server:
+  port: 8083
