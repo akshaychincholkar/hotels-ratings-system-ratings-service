@@ -2,12 +2,13 @@ package com.game.reviews.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-public class ReviewServiceApplication {
-
+@EnableEurekaClient
+public class RatingServiceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(ReviewServiceApplication.class, args);
+		SpringApplication.run(RatingServiceApplication.class, args);
 	}
 
 }

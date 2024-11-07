@@ -1,14 +1,16 @@
 package com.game.reviews.microservice.services;
 
-import com.game.reviews.microservice.entities.Ratings;
+import com.game.reviews.microservice.entities.Rating;
 
 import java.util.List;
 
 public interface RatingService {
-    Ratings saveReview(Ratings ratings);
-    Ratings getReview(String id);
-    List<Ratings> getAllReviews();
-    Ratings updateReview(Ratings ratings);
-    Ratings deleteReview(String id);
+    Rating saveReview(Rating rating);
+    Rating getReview(String id);
+    List<Rating> getAllReviews();
+    Rating updateReview(Rating rating);
+    Rating deleteReview(String id);
+    List<Rating> getRatingsByUserId(String userId);
+    List<Rating> getRatingsByHotelId(String hotelId);
 
 }

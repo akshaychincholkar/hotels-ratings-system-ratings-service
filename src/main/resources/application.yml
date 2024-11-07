@@ -2,7 +2,8 @@ spring:
   datasource:
     uri: mongodb://localhost:27017/ratings
     database: hotels_review_system
-
+  application:
+    name: RATING-SERVICE
 #    username: postgres
 #    password: root
 #    driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,3 +14,12 @@ spring:
 
 server:
   port: 8083
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8080/eureka
